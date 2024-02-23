@@ -1,0 +1,30 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;500;600;700;800;900&display=swap");
+
+body {
+  font-family: "Inter", sans-serif;
+}
+:root {
+  --grid-cols: 1;
+  --grid-rows: 1;
+}
+
+.gameboard {
+  display: grid;
+  margin: 10rem auto;
+  grid-template-rows: repeat(var(--grid-rows), 1fr);
+  grid-template-columns: repeat(var(--grid-cols), 1fr);
+  background-color: #373f86;
+  padding: 1rem;
+  border-radius: 1rem;
+}
+
+.grid-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 0.1rem solid #31303069;
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
